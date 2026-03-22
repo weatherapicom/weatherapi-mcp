@@ -1,0 +1,49 @@
+{
+  "name": "weatherapi-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for WeatherAPI.com — real-time weather, forecasts, history, marine, astronomy, air quality and more for AI agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "weatherapi-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "weather",
+    "weatherapi",
+    "forecast",
+    "ai",
+    "claude",
+    "model-context-protocol",
+    "agent",
+    "geolocation",
+    "astronomy"
+  ],
+  "author": "WeatherAPI.com",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weatherapicom/weatherapi-mcp"
+  },
+  "homepage": "https://www.weatherapi.com",
+  "bugs": {
+    "url": "https://www.weatherapi.com/contact.aspx"
+  }
+}
