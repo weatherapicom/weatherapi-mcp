@@ -2,6 +2,8 @@
 
 Official MCP (Model Context Protocol) server for [WeatherAPI.com](https://www.weatherapi.com). Gives AI agents like Claude direct access to real-time weather, forecasts, historical data, astronomy, marine weather, air quality, and more.
 
+[![WeatherAPI Server MCP server](https://glama.ai/mcp/servers/weatherapicom/weatherapi-mcp/badges/card.svg)](https://glama.ai/mcp/servers/weatherapicom/weatherapi-mcp)
+
 ## Quick Start
 
 ```bash
