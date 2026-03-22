@@ -1,0 +1,22 @@
+name: WeatherAPI MCP
+description: Real-time weather data for 200+ countries via WeatherAPI.com
+version: 1.0.0
+license: MIT
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        description: Your WeatherAPI.com API key
+        default: ""
+    required:
+      - apiKey
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "weatherapi-mcp"],
+      env: { WEATHERAPI_KEY: config.apiKey }
+    })
